@@ -93,6 +93,7 @@ body {
 
 
 }
+
 .cover h1 {
     color: var(--main-white);
     font-weight: 900;
@@ -147,17 +148,21 @@ body {
 
 .gallery {
     display: grid;
-    /* width: 80vh; */
-    grid-template-rows: fit-content (100%);
-    grid-template-columns: repeat(2, 200px);
-    /* grid-template-columns: masonry; */
-    /* background-color: var(--main-peach); */
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    align-items: center;
+    /* grid-template-rows: fit-content (100%); */
+    /* grid-template-columns: repeat(2, 200px); */
     gap: 4rem;
     font-family: 'Roboto', sans-serif;
 
 
 
 }
+
+
+
+
 
 .grid-item, .grid-item img {
     background-color: var(--main-navy);
