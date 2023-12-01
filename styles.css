@@ -77,14 +77,14 @@ body {
     background: linear-gradient(-45deg, var(--main-navy) 15%, black 15% 80%, var(--main-peach) 50% 60%);
     height: 100vh;
     width: 100%;
-    font-family: Mon;
+    /* font-family: Mon; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
 
-.cover p {
+.cover p, .contact p, .portfolio p{
     color: var(--main-peach);
     font-weight: 400;
     font-size: 2rem;
@@ -97,7 +97,7 @@ body {
 .cover h1 {
     color: var(--main-white);
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: 0.2rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -110,17 +110,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* overflow: hidden; */
 
 }
 
 
-.portfolio h1 {
+.portfolio h2 {
     color: var(--main-white);
-    font-weight: 700;
+    font-weight: 900;
     font-size: 4rem;
     letter-spacing: 0.2rem;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 1.1rem;
+    /* padding-bottom: 1.1rem; */
+    /* text-align: center; */
 }
 
 
@@ -155,6 +157,7 @@ body {
     /* grid-template-columns: repeat(2, 200px); */
     gap: 4rem;
     font-family: 'Roboto', sans-serif;
+    margin: 5%;
 
 
 
@@ -193,8 +196,55 @@ h1 {
 }
 
 .contact {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
     background: linear-gradient(-45deg, var(--main-peach) 15%, black 15% 80%, var(--main-navy) 50% 60%);
 
+}
+
+
+.contact-header {
+    display: block;
+    text-align: center;
+   
+
+}
+
+.contact-icons {
+    display: flex;
+    gap: 15%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-link {
+    transition: transform 1s ease-in-out;
+
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--main-peach);
+
+}
+
+.contact a:visited {
+    color: var(--main-peach);
+
+}
+
+a:hover {
+    color: var(--main-peach);
+    
 }
 
 footer {
