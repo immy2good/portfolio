@@ -1,0 +1,205 @@
+:root {
+    /* Retro Pallett link: https://colorhunt.co/palette/fff5e0ff6969bb2525141e46 */
+    --main-white: #FFF5E0;
+    --main-peach: #FF6969;
+    --main-maroon: #BB2525;
+    --main-navy: #141E46;
+
+}
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Libre Baskerville', serif; */
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    /* font-weight: 300; */
+    color: var(--main-white);
+}
+
+.container {
+
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: var(--main-maroon);
+    height: 5vh;
+    /* width: 100vh; */
+    width: 100%;
+    position: fixed;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    padding-right: 1em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.nav-bar li {
+    color: var(--main-white);
+    list-style: none;
+
+}
+
+.cover {
+    display: flex;
+    background: linear-gradient(-45deg, var(--main-navy) 15%, black 15% 80%, var(--main-peach) 50% 60%);
+    height: 100vh;
+    width: 100%;
+    font-family: Mon;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cover p {
+    color: var(--main-peach);
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.cover h1 {
+    color: var(--main-white);
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio {
+    display: flex;
+    background-color: var(--main-navy);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.portfolio h1 {
+    color: var(--main-white);
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1.1rem;
+}
+
+
+.center-text {
+    text-align: center;
+}
+
+.portfolio p {
+    color: var(--main-peach);
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.3rem;
+
+
+}
+
+.portfolio a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.gallery {
+    display: grid;
+    /* width: 80vh; */
+    grid-template-rows: fit-content (100%);
+    grid-template-columns: repeat(2, 200px);
+    /* grid-template-columns: masonry; */
+    /* background-color: var(--main-peach); */
+    gap: 4rem;
+    font-family: 'Roboto', sans-serif;
+
+
+
+}
+
+.grid-item, .grid-item img {
+    background-color: var(--main-navy);
+    width: 100%;
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding-top: 1rem;
+
+}
+
+.item-header p {
+    /* display: flex; */
+    text-align: center;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--main-white);
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.contact {
+    background: linear-gradient(-45deg, var(--main-peach) 15%, black 15% 80%, var(--main-navy) 50% 60%);
+
+}
+
+footer {
+    display: flex;
+    background-color: var(--main-navy);
+    height: 25vh;
+    width: 100vh;
+    width: 100%;
+    /* position: fixed; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
