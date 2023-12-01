@@ -29,8 +29,10 @@ body {
     font-size: 1.6rem;
     /* font-weight: 300; */
     color: var(--main-navy);
-    overflow: hidden;
+    /* overflow: hidden; */
     /* Hide scrollbars */
+    overflow-x: hidden;
+    overflow-y:auto;
 }
 
 
