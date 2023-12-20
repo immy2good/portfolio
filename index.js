@@ -17,3 +17,6 @@ $(".cover").on("click", function () {
 //   $("#main-heading").on("click", function(){
 //     $("#main-heading").slideToggle("slow").slideToggle("slow");
 //   });
+$("h1").on("click", function () {
+$("h1").css("color", "red");    
+});
